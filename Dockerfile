@@ -8,6 +8,7 @@ RUN apt-get update; \
     apt-get full-upgrade -y; \
     apt-get install -y --no-install-recommends \
         ca-certificates \
+        git \
         curl \
     ; \
     apt-get clean; \
@@ -28,4 +29,5 @@ RUN command -v nvm; \
     command -v node; \
     node --version; \
     command -v npm; \
-    npm --version
+    npm --version \
+    npx yarn add @fdsl/gsys
