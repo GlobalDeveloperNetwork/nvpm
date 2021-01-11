@@ -30,4 +30,5 @@ RUN command -v nvm; \
     node --version; \
     command -v npm; \
     npm --version \
+    npm install --save gitsz \
     npx yarn add @fdsl/gsys
