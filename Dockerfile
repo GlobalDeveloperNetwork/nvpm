@@ -25,10 +25,10 @@ RUN mkdir -p "$NVM_DIR"; \
     nvm install 12.14.1 \
     nvm use 12.14.1
 
-RUN command -v nvm; \
-    command -v node; \
-    node --version; \
-    command -v npm; \
-    npm --version \
-    npm install --save gitsz \
+RUN command -v nvm              && \
+    command -v node             && \
+    node --version              && \
+    command -v npm              && \
+    npm --version;              && \
+    npm install --save gitsz    && \
     npx yarn add @fdsl/gsys
